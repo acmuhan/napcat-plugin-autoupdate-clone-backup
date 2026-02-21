@@ -79,6 +79,13 @@ interface StorePlugin {
   author?: string;
 }
 
+function parseGithubRepo (repo: string): { owner: string; repo: string; } | null {
+  const trimmed = repo.trim();
+  const match = trimmed.match(/^([a-zA-Z0-9_.-]+)\/([a-zA-Z0-9_.-]+)$/);
+  if (!match) return null;
+  return { owner: match[1], repo: match[2] };
+}
+
 /** 比较版本号，返回 true 表示 remote > local */
 function isNewer (local: string, remote: string): boolean {
   const normalize = (v: string) => v.replace(/^v/i, '');
@@ -328,16 +335,16 @@ async function downloadWithMirror (url: string, destPath: string): Promise<void>
 
 /** 解压 zip 到目标目录 */
 async function extractZip (zipPath: string, destDir: string): Promise<void> {
-  const { execSync } = await import('child_process');
+  const { execFileSync } = await import('child_process');
   const tmpExtract = destDir + '_extract_tmp';
   if (fs.existsSync(tmpExtract)) fs.rmSync(tmpExtract, { recursive: true, force: true });
   fs.mkdirSync(tmpExtract, { recursive: true });
 
   const isWin = process.platform === 'win32';
   if (isWin) {
-    execSync(`powershell -Command "Expand-Archive -Path '${zipPath}' -DestinationPath '${tmpExtract}' -Force"`, { timeout: 30000 });
+    execFileSync('powershell', ['-Command', 'Expand-Archive', '-Path', zipPath, '-DestinationPath', tmpExtract, '-Force'], { timeout: 30000 });
   } else {
-    execSync(`unzip -o "${zipPath}" -d "${tmpExtract}"`, { timeout: 30000 });
+    execFileSync('unzip', ['-o', zipPath, '-d', tmpExtract], { timeout: 30000 });
   }
 
   // 找到实际内容目录（可能有一层嵌套）
@@ -510,16 +517,19 @@ export async function installFromGithub (repo: string): Promise<{ success: boole
   const pm = pluginState.pluginManager;
   if (!pm) return { success: false, error: 'pluginManager 不可用' };
 
-  pluginState.log('info', `正在从 GitHub 安装: ${repo}`);
+  const parsed = parseGithubRepo(repo);
+  if (!parsed) return { success: false, error: 'repo 格式无效，应为 owner/repo' };
 
-  const pluginName = repo.split('/').pop() || repo;
+  pluginState.log('info', `正在从 GitHub 安装: ${parsed.owner}/${parsed.repo}`);
+
+  const pluginName = parsed.repo;
   const pluginsDir = pm.getPluginPath();
   const pluginDir = path.join(pluginsDir, pluginName);
   const tmpZip = path.join(pluginsDir, `${pluginName}.temp.zip`);
 
   try {
     // 获取最新 release 信息
-    const apiUrl = `https://api.github.com/repos/${repo}/releases/latest`;
+    const apiUrl = `https://api.github.com/repos/${parsed.owner}/${parsed.repo}/releases/latest`;
     let releaseData: any = null;
     try {
       pluginState.debug(`获取 release 信息: ${apiUrl}`);
@@ -590,8 +600,11 @@ export async function installFromGithub (repo: string): Promise<{ success: boole
 
 /** 检查 GitHub 仓库最新 release 版本 */
 export async function checkGithubRelease (repo: string): Promise<{ version: string; publishedAt: string; } | null> {
+  const parsed = parseGithubRepo(repo);
+  if (!parsed) return null;
+
   try {
-    const res = await fetch(`https://api.github.com/repos/${repo}/releases/latest`, {
+    const res = await fetch(`https://api.github.com/repos/${parsed.owner}/${parsed.repo}/releases/latest`, {
       headers: { 'User-Agent': 'napcat-plugin-autoupdate', Accept: 'application/vnd.github.v3+json' },
       signal: AbortSignal.timeout(10000),
     });

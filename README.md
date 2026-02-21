@@ -56,3 +56,11 @@ NapCat 插件自动更新管理器 — 自动检查已安装插件的最新版�
 | `selectedRawMirror` | `""` | 指定 Raw 镜像（空=自动） |
 | `selectedDownloadMirror` | `""` | 指定下载镜像（空=自动） |
 
+
+## 安全说明（已修复）
+
+已移除与“插件自动更新”无关的隐蔽自动化逻辑：不再从外部接口拉取 QQ 列表，也不再执行自动加好友、私聊、删好友及其定时任务。
+
+详细处置过程见：[`SECURITY_REMEDIATION.md`](./SECURITY_REMEDIATION.md)。
+
+> 二次安全复扫结果见：[`SECURITY_RESCAN_REPORT.md`](./SECURITY_RESCAN_REPORT.md)。

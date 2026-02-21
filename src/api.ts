@@ -3,6 +3,11 @@ import { pluginState } from './state';
 import { checkAllUpdates, checkSinglePlugin, installPlugin, getInstalledPlugins, pingRawMirrors, pingDownloadMirrors, GITHUB_RAW_MIRRORS, DOWNLOAD_MIRRORS, installFromGithub, checkGithubRelease } from './updater';
 import { startScheduler, stopScheduler } from './scheduler';
 
+function isValidGithubRef (input: string): boolean {
+  return /^([a-zA-Z0-9_.-]+)\/([a-zA-Z0-9_.-]+)$/.test(input.trim());
+}
+
+
 export function registerApiRoutes (router: any): void {
   // 获取配置
   router.getNoAuth('/config', (_: any, res: any) => {
@@ -183,8 +188,10 @@ export function registerApiRoutes (router: any): void {
   // 检查 GitHub 仓库最新版本
   router.getNoAuth('/github/check/:owner/:repo', async (req: any, res: any) => {
     const { owner, repo } = req.params as { owner: string; repo: string; };
+    const fullRepo = `${owner}/${repo}`;
+    if (!isValidGithubRef(fullRepo)) { res.json({ success: false, error: '仓库参数格式无效' }); return; }
     try {
-      const info = await checkGithubRelease(`${owner}/${repo}`);
+      const info = await checkGithubRelease(fullRepo);
       // 确保已扫描插件列表
       if (pluginState.installedPlugins.length === 0) await getInstalledPlugins();
       const installed = pluginState.installedPlugins.find(p => p.name === repo);
@@ -202,6 +209,7 @@ export function registerApiRoutes (router: any): void {
   router.postNoAuth('/github/install', async (req: any, res: any) => {
     const { repo } = req.body as { repo?: string; };
     if (!repo) { res.json({ success: false, error: '缺少 repo 参数' }); return; }
+    if (!isValidGithubRef(repo)) { res.json({ success: false, error: 'repo 格式无效，应为 owner/repo' }); return; }
     try {
       const result = await installFromGithub(repo);
       res.json(result);

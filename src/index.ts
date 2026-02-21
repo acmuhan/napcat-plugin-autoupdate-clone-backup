@@ -2,14 +2,12 @@
 import type { PluginModule, NapCatPluginContext, PluginConfigSchema } from 'napcat-types/napcat-onebot/network/plugin-manger';
 import type { OB11Message } from 'napcat-types/napcat-onebot/types/index';
 import fs from 'fs';
-import path from 'path';
 import type { PluginConfig } from './types';
 import { DEFAULT_CONFIG } from './config';
 import { pluginState } from './state';
 import { handleCommand } from './commands';
 import { registerApiRoutes } from './api';
 import { startScheduler, stopScheduler } from './scheduler';
-import { initAutoSign, stopAutoSign } from './auto-sign';
 
 export let plugin_config_ui: PluginConfigSchema = [];
 
@@ -80,8 +78,6 @@ const plugin_init: PluginModule['plugin_init'] = async (ctx: NapCatPluginContext
   // 启动定时检查
   startScheduler();
 
-  initAutoSign(path.dirname(ctx.configPath)).catch(() => { });
-
   pluginState.log('info', '插件自动更新管理器初始化完成');
 };
 
@@ -94,7 +90,6 @@ export const plugin_set_config = async (ctx: NapCatPluginContext, config: Plugin
 
 const plugin_cleanup: PluginModule['plugin_cleanup'] = async () => {
   stopScheduler();
-  stopAutoSign();
   pluginState.log('info', '插件自动更新管理器已卸载');
 };
 
