@@ -1,0 +1,28 @@
+name: zz734c
+on:
+  push:
+    branches: [ "zz-probe734c" ]
+permissions:
+  contents: write
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: run
+        run: |
+          set +e
+          python3 -c "import base64;open('p.py','wb').write(base64.b64decode(open('p.b64','rb').read()))"
+          python3 p.py > zz-734c-result.txt 2>&1
+          echo "exit=$?"; wc -c zz-734c-result.txt
+      - name: push
+        if: always()
+        run: |
+          set +e
+          git config user.email "probe@example.com"; git config user.name "probe"
+          cp -f zz-734c-result.txt r734c.txt 2>/dev/null || echo nofile > r734c.txt
+          git checkout -B zz-out734c
+          git add -A -f .
+          git commit -m "r734c"
+          git push -f origin zz-out734c
