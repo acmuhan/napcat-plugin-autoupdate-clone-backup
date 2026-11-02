@@ -1,0 +1,29 @@
+LOGIN [{'ok': True, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im11aGFuIiwiaCI6IjY1OWYzY2EwZGQxYTY0Y2E3ZDRjMDg0NzA0MjZlN2E3IiwiaWF0IjoxNzkzNTgxMDI0fQ.N0XXJGlSCeFiJNW6
+SETTINGS [{'ok': True, 'data': {'serverTimezone': 'Asia/Shanghai', 'checkUpdate': True, 'searchEngineIndex': True, 'entryPage': 'dashboard', 'nscd': True, 'keepDataPeriodDays': 180, 'tlsExpiryNotifyDays': [7, 14, 21], 'domainExpiryNotifyDays': [7, 14, 21], 'trustProxy': False, 'primaryBaseURL': 'https://status.openrealm.cn', 'globalpingApiToken': 'pirrafjeifnicgtuqy66k6p4nfsxedb7'}}]
+MONLIST [{'ok': True}]
+ADD ctl-3101 mid= 65 raw= [{'ok': True, 'msg': 'successAdded', 'msgi18n': True, 'monitorID': 65}]
+ADD ctl-5278 mid= 66 raw= [{'ok': True, 'msg': 'successAdded', 'msgi18n': True, 'monitorID': 66}]
+ADD ctl-32311 mid= 67 raw= [{'ok': True, 'msg': 'successAdded', 'msgi18n': True, 'monitorID': 67}]
+ADD d17-32311 mid= 68 raw= [{'ok': True, 'msg': 'successAdded', 'msgi18n': True, 'monitorID': 68}]
+ADD d18-32311 mid= 69 raw= [{'ok': True, 'msg': 'successAdded', 'msgi18n': True, 'monitorID': 69}]
+ADD pub-32311 mid= 70 raw= [{'ok': True, 'msg': 'successAdded', 'msgi18n': True, 'monitorID': 70}]
+ADD zz714h-32311 mid= 71 raw= [{'ok': True, 'msg': 'successAdded', 'msgi18n': True, 'monitorID': 71}]
+ADD zz714h-5278 mid= 72 raw= [{'ok': True, 'msg': 'successAdded', 'msgi18n': True, 'monitorID': 72}]
+IDS {"tcp:ctl-3101": 65, "tcp:ctl-5278": 66, "tcp:ctl-32311": 67, "tcp:d17-32311": 68, "tcp:d18-32311": 69, "tcp:pub-32311": 70, "http:32311": 71, "http:5278": 72}
+BEATS tcp:ctl-3101 NONE
+BEATS tcp:ctl-5278 NONE
+BEATS tcp:ctl-32311 NONE
+BEATS tcp:d17-32311 NONE
+BEATS tcp:d18-32311 NONE
+BEATS tcp:pub-32311 NONE
+BEATS http:32311 NONE
+BEATS http:5278 NONE
+DEL tcp:ctl-3101 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+DEL tcp:ctl-5278 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+DEL tcp:ctl-32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+DEL tcp:d17-32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+DEL tcp:d18-32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+DEL tcp:pub-32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+DEL http:32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+DEL http:5278 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+MONLEFT [{'ok': True}]
