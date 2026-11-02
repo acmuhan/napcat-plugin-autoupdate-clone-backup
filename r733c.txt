@@ -1,0 +1,114 @@
+LOGIN OK [{'ok': True, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im11aGFuIiwiaCI6IjY1OWYzY2EwZGQxYTY0Y2E3ZDR
+MON_BEFORE {"1": "JackAuth Local", "2": "b"}
+CLEANED 0
+ADDED 102 of 102
+HB_MONITORS 104
+R zz733-ctl-pub24678 st=1 msg=0 ms
+R zz733-ctl-bh st=0 msg=Connection failed
+R zz733-c32311-172_17_0_1 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_1 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_2 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_2 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_3 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_3 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_4 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_4 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_5 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_5 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_6 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_6 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_7 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_7 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_8 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_8 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_9 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_9 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_10 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_10 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_11 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_11 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_12 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_12 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_13 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_13 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_14 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_14 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_15 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_15 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_16 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_16 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_17 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_17 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_18 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_18 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_19 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_19 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_20 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_20 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_21 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_21 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_22 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_22 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_23 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_23 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_24 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_24 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_25 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_25 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_26 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_26 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_27 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_27 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_28 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_28 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_29 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_29 st=0 msg=Connection failed
+R zz733-c32311-172_17_0_30 st=0 msg=Connection failed
+R zz733-c32311-172_18_0_30 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_1 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_1 st=1 msg=1 ms
+R zz733-c3001-172_17_0_2 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_2 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_3 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_3 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_4 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_4 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_5 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_5 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_6 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_6 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_7 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_7 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_8 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_8 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_9 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_9 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_10 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_10 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_11 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_11 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_12 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_12 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_13 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_13 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_14 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_14 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_15 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_15 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_16 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_16 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_17 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_17 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_18 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_18 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_19 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_19 st=0 msg=Connection failed
+R zz733-c3001-172_17_0_20 st=0 msg=Connection failed
+R zz733-c5278-172_18_0_20 st=0 msg=Connection failed
+UPS ["zz733-ctl-pub24678", "zz733-c5278-172_18_0_1"]
+R zz733-http-ctl-pub24678 st=0 msg=getaddrinfo ENOTFOUND pub24678 body=
+R zz733-http2-ctl-pub24678 st=0 msg=getaddrinfo ENOTFOUND pub24678 body=
+R zz733-http-c5278-172_18_0_1 st=0 msg=connect ECONNREFUSED 172.18.0.1:32311 body=
+R zz733-http2-c5278-172_18_0_1 st=0 msg=connect ECONNREFUSED 172.18.0.1:3001 body=
+DELETED 106
+MON_AFTER {"1": "JackAuth Local", "2": "b"}
