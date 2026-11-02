@@ -1,0 +1,35 @@
+== RUNNER4 == host=runnervm48cm3 utc=2026-11-02T00:28:20Z run=41367311585
+EGRESS HTTP 200 {"Content-Length": "12", "access-control-allow-origin": "*", "content-type": "text/plain", "date": "Mon, 02 Nov 2026 00:28:20 GMT", "via": "1.1 google", "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000", "Connection": "close"} | '51.8.121.161'
+== FRPS 7500 ==
+7500/ :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:27:27 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+7500/api/serverinfo :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:27:28 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+7500/api/proxy/list :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:27:29 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+7500/static/ :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:27:30 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+7500/#/proxies :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:27:31 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+7500/favicon.ico :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:27:31 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+== 7001 ==
+ERR RemoteDisconnected Remote end closed connection without response
+== 5215 ==
+MYSQL root/mysql_XKH25C -> OperationalError (1045, "Access denied for user 'root'@'172.18.0.1' (using password: YES)")
+MYSQL root/258025 -> OperationalError (1045, "Access denied for user 'root'@'172.18.0.1' (using password: YES)")
+MYSQL root/Liu310013. -> OperationalError (1045, "Access denied for user 'root'@'172.18.0.1' (using password: YES)")
+MYSQL root/redis_ZSfmZp -> OperationalError (1045, "Access denied for user 'root'@'172.18.0.1' (using password: YES)")
+MYSQL muhan/Liu310013. -> OperationalError (1045, "Access denied for user 'muhan'@'172.18.0.1' (using password: YES)")
+MYSQL root/<empty> -> OperationalError (1045, "Access denied for user 'root'@'172.18.0.1' (using password: NO)")
+MYSQL root/root -> OperationalError (1045, "Access denied for user 'root'@'172.18.0.1' (using password: YES)")
+MYSQL root/ShenHu1337.. -> OperationalError (1045, "Access denied for user 'root'@'172.18.0.1' (using password: YES)")
+== REDIS 6379 ==
+REDIS AUTH redis_ZSfmZp -> b'-WRONGPASS invalid username-password pair or user is disabled.\r\n'
+REDIS PING -> b'-NOAUTH Authentication required.\r\n'
+REDIS INFO keyspace -> b'-NOAUTH Authentication required.\r\n'
+REDIS CONFIG GET dir -> b'-NOAUTH Authentication required.\r\n'
+REDIS DBSIZE -> b'-NOAUTH Authentication required.\r\n'
+REDIS KEYS * -> b'-NOAUTH Authentication required.\r\n'
+== 1PANEL 24678 (v1) ==
+HTTP 200 {"Content-Type": "application/json; charset=utf-8", "Set-Cookie": "panel_public_key=LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF0ZzZ5T3VDaktMbEU2S1BVVGRBZgpDWFlpMnM1YjJvSmhSVkZjYldjOU9zWm5YdG9mOXNMZnVkVGNwVEZ2cHVQcnlSVTlsbUZBOVdjRWJETklPZ0JmCkMzZUVHYWZrK0tab3o4enFad09SYldORVVtZ2N4cGZ4eG5rVDV6Wk0zaHNIYlpZcWszbkVnb2FDQkJMeDhMVHMKbWZDZTZRdFJHTkFQbHJlZSs2UWNEUjEwbUVxYkhoNEs5ZUY3bm5uWUwyQ3pmYlJ5R09sWU02ei80VEsxKy81dgpwZDJnblFzQjkrOFo4cWphdThkL3drRGpOVmJPSW01SFF2WVIyR3RnN1hSbDhjUVJyRmp3cXBncFhEeG9XYTRxClhodlY1d0ZGNGx1RzVkWUZxWXlDa3dpRkUyV2xONFdZcTdQMTA2UUYySWVqUzJGVi9GNTE2cCtZSUtOd1ZGK1gKZXdJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg%3D%3D; Path=/; Max-Age=604800", "Date": "Mon, 02 Nov 2026 00:28:43 GMT", "Content-Length": "70", "Connection": "close"} | '{"code":200,"message":"","data":{"needCaptcha":false,"language":"zh"}}'
+HTTP 200 {"Content-Type": "application/json; charset=utf-8", "Set-Cookie": "panel_public_key=LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF0ZzZ5T3VDaktMbEU2S1BVVGRBZgpDWFlpMnM1YjJvSmhSVkZjYldjOU9zWm5YdG9mOXNMZnVkVGNwVEZ2cHVQcnlSVTlsbUZBOVdjRWJETklPZ0JmCkMzZUVHYWZrK0tab3o4enFad09SYldORVVtZ2N4cGZ4eG5rVDV6Wk0zaHNIYlpZcWszbkVnb2FDQkJMeDhMVHMKbWZDZTZRdFJHTkFQbHJlZSs2UWNEUjEwbUVxYkhoNEs5ZUY3bm5uWUwyQ3pmYlJ5R09sWU02ei80VEsxKy81dgpwZDJnblFzQjkrOFo4cWphdThkL3drRGpOVmJPSW01SFF2WVIyR3RnN1hSbDhjUVJyRmp3cXBncFhEeG9XYTRxClhodlY1d0ZGNGx1RzVkWUZxWXlDa3dpRkUyV2xONFdZcTdQMTA2UUYySWVqUzJGVi9GNTE2cCtZSUtOd1ZGK1gKZXdJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg%3D%3D; Path=/; Max-Age=604800", "Date": "Mon, 02 Nov 2026 00:28:44 GMT", "Connection": "close", "Transfer-Encoding": "chunked"} | '{"code":200,"message":"","data":{"captchaID":"Zft2FVCdohJVTYhObt1k","imagePath":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAyCAIAAAAYxYiPAAAK+0lEQVR4nOxbfXAU5f1/nt293bvsvXB5D+RFEkgAk6CYiPkB8hMtCK0VKVBnSnUobW07tra1Wp22tjpTRzvVTq2t1U47tLbWGbQjFplYtMaikKBoCEQoEMAk5O1yL7m7vd293X2ezt7e7V3CJtlLc'
+== 111.170.14.40:80 ==
+HTTP 404 {"Server": "Apache", "Content-Length": "163", "Pragma": "no-cache", "Content-Type": "text/html;charset=UTF-8", "Cache-control": "no-store", "Connection": "close"} | '<html>抱歉，您访问的 IP 地址及端口号或未备案域名目前被限制.请使用已备案的域名进行访问，如有疑问请联系管理员.</html>'
+== 185 8788 /agents/cli + 8790 pricing ==
+HTTP 200 {"Server": "wb-proxy/1.10.0 Python/3.11.18", "Date": "Mon, 02 Nov 2026 00:28:44 GMT", "Content-Type": "text/plain; charset=utf-8", "Content-Disposition": "inline; filename=\"wb_agents.py\"", "Content-Length": "69859"} | '"""One-click agent integration for local AI clients.\n\nDetects installed AI clients (Claude Code, Codex, OpenCode, DSH, Crush, ZCode),\nrewrites their configuration to point at this gateway, keeps a byte-exact\nbackup of every file it touches, and can restore the original state with one\ncall. Inspired by EasyCLIProxyAPI\'s agents mechanism.\n\nThe same module is runnable as a standalone configurator, fo'
+HTTP 401 {"Server": "qd-proxy/1.7.10 Python/3.11.18", "Date": "Mon, 02 Nov 2026 00:28:45 GMT", "Content-Type": "application/json; charset=utf-8", "Content-Length": "87"} | '{"error": {"message": "invalid api key", "type": "invalid_request_error", "code": 401}}'
