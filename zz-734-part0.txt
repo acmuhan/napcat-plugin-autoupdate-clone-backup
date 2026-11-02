@@ -1,0 +1,162 @@
+== RUNNER runnervm48cm3 utc=2026-11-02T01:14:11Z
+EGRESS HTTP 200 OK len=13 13.71.226.178
+== INFO server ==
+redis_version:8.10.2
+redis_mode:standalone
+os:Linux 6.8.0-147-generic x86_64
+arch_bits:64
+multiplexing_api:epoll
+process_id:1
+run_id:3bad47f0a080da44e9f1c3f9a496b505c809dad6
+tcp_port:6379
+uptime_in_seconds:663596
+executable:/data/redis-server
+config_file:/etc/redis/redis.conf
+io_threads_active:0
+== clients ==
+connected_clients:24
+maxclients:10000
+blocked_clients:0
+== CONFIG GET (key knobs) ==
+  dir = ['dir', '/data']
+  dbfilename = ['dbfilename', 'dump.rdb']
+  save = ['save', '3600 1 300 100 60 10000']
+  bind = ['bind', '0.0.0.0']
+  protected-mode = ['protected-mode', 'yes']
+  port = ['port', '6379']
+  requirepass = ['requirepass', '4GRZhjQ4xhdfNXG4']
+  aclfile = ['aclfile', '']
+  enable-module-command = ['enable-module-command', 'no']
+  enable-debug-command = ['enable-debug-command', 'no']
+  rename-command = []
+  appendonly = ['appendonly', 'no']
+  appendfilename = ['appendfilename', 'appendonly.aof']
+  logfile = ['logfile', '']
+  unixsocket = ['unixsocket', '']
+  maxmemory-policy = ['maxmemory-policy', 'noeviction']
+  replica-read-only = ['replica-read-only', 'yes']
+  masterauth = ['masterauth', '']
+  cluster-enabled = ['cluster-enabled', 'no']
+  loadmodule = []
+  supervised = ['supervised', 'no']
+  pidfile = ['pidfile', '/var/run/redis_6379.pid']
+  loglevel = ['loglevel', 'notice']
+  daemonize = ['daemonize', 'no']
+  sanitize-dump-payload = ['sanitize-dump-payload', 'no']
+  enable-protected-configs = ['enable-protected-configs', 'no']
+  enable-debug-command = ['enable-debug-command', 'no']
+== ALL CONFIG (filtered) ==
+  CFG acl-pubsub-default = 'resetchannels'
+  CFG aclfile = ''
+  CFG acllog-max-len = '128'
+  CFG aof-timestamp-enabled = 'no'
+  CFG appenddirname = 'appendonlydir'
+  CFG appendfilename = 'appendonly.aof'
+  CFG backupdirname = 'backupdir'
+  CFG bgsave-cpulist = ''
+  CFG bgsave_cpulist = ''
+  CFG cluster-allow-replica-migration = 'yes'
+  CFG cluster-bus-port-protected-mode = 'no'
+  CFG cluster-config-file = 'nodes.conf'
+  CFG cluster-enabled = 'no'
+  CFG cluster-replica-no-failover = 'no'
+  CFG cluster-replica-validity-factor = '10'
+  CFG cluster-require-full-coverage = 'yes'
+  CFG cluster-slave-no-failover = 'no'
+  CFG cluster-slave-validity-factor = '10'
+  CFG cluster-slot-stats-enabled = 'no'
+  CFG crash-log-enabled = 'yes'
+  CFG crash-memcheck-enabled = 'yes'
+  CFG dbfilename = 'dump.rdb'
+  CFG dir = '/data'
+  CFG enable-debug-command = 'no'
+  CFG enable-module-command = 'no'
+  CFG enable-protected-configs = 'no'
+  CFG hide-user-data-from-log = 'no'
+  CFG lazyfree-lazy-user-del = 'no'
+  CFG lazyfree-lazy-user-flush = 'no'
+  CFG logfile = ''
+  CFG lua-time-limit = '5000'
+  CFG masterauth = ''
+  CFG masteruser = ''
+  CFG maxmemory = '0'
+  CFG maxmemory-clients = '0'
+  CFG maxmemory-eviction-tenacity = '10'
+  CFG maxmemory-policy = 'noeviction'
+  CFG maxmemory-samples = '5'
+  CFG min-replicas-max-lag = '10'
+  CFG min-replicas-to-write = '0'
+  CFG min-slaves-max-lag = '10'
+  CFG min-slaves-to-write = '0'
+  CFG notify-keyspace-events = ''
+  CFG pidfile = '/var/run/redis_6379.pid'
+  CFG preload-file = ''
+  CFG protected-mode = 'yes'
+  CFG proto-max-bulk-len = '536870912'
+  CFG rdb-del-sync-files = 'no'
+  CFG rdb-save-incremental-fsync = 'yes'
+  CFG repl-diskless-sync-max-replicas = '0'
+  CFG repl-ping-replica-period = '10'
+  CFG repl-ping-slave-period = '10'
+  CFG replica-announce-ip = ''
+  CFG replica-announce-port = '0'
+  CFG replica-announced = 'yes'
+  CFG replica-full-sync-buffer-limit = '0'
+  CFG replica-ignore-disk-write-errors = 'no'
+  CFG replica-ignore-maxmemory = 'yes'
+  CFG replica-lazy-flush = 'no'
+  CFG replica-priority = '100'
+  CFG replica-read-only = 'yes'
+  CFG replica-serve-stale-data = 'yes'
+  CFG replicaof = ''
+  CFG requirepass = '4GRZhjQ4xhdfNXG4'
+  CFG sanitize-dump-payload = 'no'
+  CFG save = '3600 1 300 100 60 10000'
+  CFG search-_print-profile-clock = 'yes'
+  CFG search-disk-max-open-files = '1024'
+  CFG search-disk-use-direct-reads = 'no'
+  CFG search-enable-unstable-features = 'no'
+  CFG slave-announce-ip = ''
+  CFG slave-announce-port = '0'
+  CFG slave-ignore-maxmemory = 'yes'
+  CFG slave-lazy-flush = 'no'
+  CFG slave-priority = '100'
+  CFG slave-read-only = 'yes'
+  CFG slave-serve-stale-data = 'yes'
+  CFG slaveof = ''
+  CFG stop-writes-on-bgsave-error = 'yes'
+  CFG syslog-enabled = 'no'
+  CFG tls-auth-clients-user = 'off'
+  CFG tls-ca-cert-dir = ''
+  CFG tls-ca-cert-file = ''
+  CFG tls-cert-file = ''
+  CFG tls-client-cert-file = ''
+  CFG tls-client-key-file = ''
+  CFG tls-client-key-file-pass = ''
+  CFG tls-dh-params-file = ''
+  CFG tls-key-file = ''
+  CFG tls-key-file-pass = ''
+  CFG tls-protocols = ''
+  CFG tls-replication = 'no'
+  CFG ts-libmr-protocol = 'INTERNAL'
+  MODULE LIST -> "[['name', 'timeseries', 'ver', '81001', 'path', '/usr/local/lib/redis/modules//redistimeseries.so', 'args', []], ['name', 'search', 'ver', '81001', 'path', '/usr/local/lib/redis/modules//redisearch.so', 'args', []], ['name', 'bf', 'ver', '81001', 'path', '/usr/local/lib/redis/modules//redisbloom.so', 'args', []], ['name', 'vectorset', 'ver', '1', 'path', '', 'args', []], ['name', 'ReJSON', 'ver', '81000', 'path', '/usr/local/lib/redis/modules//rejson.so', 'args', []]]"
+  ACL LIST -> "['user default on sanitize-payload #24594a58addd92034072a9672c6d0e3856913efc03d4c54180b2314053448f35 ~* &* +@all']"
+  ACL WHOAMI -> 'default'
+  ROLE -> "['master', '0', []]"
+  DBSIZE -> '77'
+  INFO keyspace -> '# Keyspace\r\ndb0:keys=77,expires=42,avg_ttl=257226398,subexpiry=0\r\n'
+  CLIENT LIST -> 'id=82897 addr=172.18.0.1:50340 laddr=172.18.0.5:6379 fd=43 name= age=12562 idle=12562 flags=N db=0 sub=0 psub=0 ssub=0 multi=-1 watch=0 qbuf=0 qbuf-free=0 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 omem-shared=0 omem-unshared=0 tot-mem=2304 events=r cmd=NULL user=default redir=-1 resp=2 lib-name= lib-ver= io-thread=0 tot-net-in=0 tot-net-out=0 tot-cmds=0 read-events=0 avg-pipeline-len-sum=0 avg-pipeline-len-cnt=0\nid=81822 addr=172.18.0.1:56056 laddr=172.18.0.5:6379 fd=31 name= age=19243 idle=19243 flags=N db=0 sub=0 psub=0 ssub=0 multi=-1 watch=0 qbuf=0 qbuf-free=0 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 omem-shared=0 omem-unshared=0 tot-mem=2304 events=r cmd=NULL user=default redir=-1 resp=2 lib-name= lib-ver= io-thread=0 tot-net-in=0 tot-net-out=0 tot-cmds=0 read-events=0 avg-pipeline-len-sum=0 avg-pipeline-len-cnt=0\nid=62482 addr=172.18.0.1:37154 laddr=172.18.0.5:6379 fd=22 name= age=456841 idle=0 flags=N db=0 sub=0 psub=0 ssub=0 multi=-1 watch=0 qbuf=0 qbuf-free=0 argv-mem=0 multi-mem=0 rbs=1024 rbp=656 obl=0 oll=0 omem=0 omem-shared=0 omem-unshared=0 tot-mem=2304 events=r cmd=info user=default redir=-1 resp=3 lib-name=Lettuce lib-ver=6.5.5.RELEASE/cb02888 io-thread=0 tot-net-in=1084758 tot-net-out=27365085 tot-cmds=41717 read-events=41716 avg-pipeline-len-sum=41717 avg-pipeline-len-cnt=41716\nid=62481 addr=172.18.0.1:37142 laddr=172.18.0.5:6379 fd=21 name= age=456856 idle=1 flags=N db=0 sub=0 psub=0 ssub=0 multi=-1 watch=0 qbuf=0 qbuf-free=0 argv-mem=0 multi-mem=0 rbs=1024 rbp=382 obl=0 oll=0 omem=0 omem-shared=0 omem-unshared=0 tot-mem=2304 events=r cmd=get user=default redir=-1 resp=3 lib-name=Lettuce lib-ver=6.5.5.RELEASE/cb02888 io-thread=0 tot-net-in=6437855 tot-net-out=36990528 tot-cmds=100557 read-events=100550 avg-pipeline-len-sum=100557 avg-pipeline-len-cnt=100550\nid=82885 addr=172.18.0.7:40934 laddr=172.18.0.5:6379 fd=42 name= age=12869 idle=12869 flags=N db=0 sub=0 psub=0 ssub=0 multi=-1 watch=0 qbuf=0 qbuf-free=0 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 omem-shared=0 omem-unshared=0 tot-mem=2304 events=r cmd=NULL user=default redir=-1 resp=2 lib-name= lib-ver= io-thread=0 tot-net-in=0 tot-net-out=0 tot-cmds=0 read-events=0 avg-pipeline-len-sum=0 avg-pipeline-len-cnt=0\nid=81740 addr=172.18.0.1:41440 laddr=172.18.0.5:6379 fd=28 name= age=20208 idle=20208 flags=N db=0 sub=0 psub=0 ssub=0 multi=-1 watch=0 qbuf=0 qbuf-free=0 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 omem-shared=0 omem-unshared=0 tot-mem=2304 events=r cmd=NULL user=default redir=-1 resp=2 lib-name= lib-ver= io-thread=0 tot-net-in=0 tot-net-out=0 tot-cmds=0 read-events=0 avg-pipeline-len-sum=0 avg-pipeline-len-cnt=0\nid=82870 addr=172.18.0.1:59496 laddr=172.18.0.5:6379 fd=35 name= age=13391 idle=13391 flags=N db=0 sub=0 psub=0 ssub=0 multi=-1 watch=0 qbuf=0 qbuf-free=0 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 omem-shared=0 omem-unshared=0 tot-mem=2304 events=r cmd=NULL user=default redir=-1 resp'
+  COMMAND INFO CONFIG SLAVEOF REPLICAOF MODULE SAVE BGSAVE DEBUG -> "[['config', '-2', [], '0', '0', '0', ['@slow'], [], [], [['config|help', '2', ['loading', 'stale'], '0', '0', '0', ['@slow'], [], [], []], ['config|rewrite', '2', ['admin', 'noscript', 'loading', 'stale'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], ['request_policy:all_nodes', 'response_policy:all_succeeded'], [], []], ['config|get', '-3', ['admin', 'noscript', 'loading', 'stale'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], [], [], []], ['config|resetstat', '2', ['admin', 'noscript', 'loading', 'stale'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], ['request_policy:all_nodes', 'response_policy:all_succeeded'], [], []], ['config|set', '-4', ['admin', 'noscript', 'loading', 'stale'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], ['request_policy:all_nodes', 'response_policy:all_succeeded'], [], []]]], ['slaveof', '3', ['admin', 'noscript', 'stale', 'no_async_loading'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], [], [], []], ['replicaof', '3', ['admin', 'noscript', 'stale', 'no_async_loading'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], [], [], []], ['module', '-2', [], '0', '0', '0', ['@slow'], [], [], [['module|help', '2', ['loading', 'stale'], '0', '0', '0', ['@slow'], [], [], []], ['module|unload', '3', ['admin', 'noscript', 'no_async_loading'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], [], [], []], ['module|loadex', '-3', ['admin', 'noscript', 'no_async_loading'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], [], [], []], ['module|load', '-3', ['admin', 'noscript', 'no_async_loading'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], [], [], []], ['module|list', '2', ['admin', 'noscript'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], ['nondeterministic_output_order'], [], []]]], ['save', '1', ['admin', 'noscript', 'no_async_loading', 'no_multi'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], [], [], []], ['bgsave', '-1', ['admin', 'noscript', 'no_async_loading'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], [], [], []], ['debug', '-2', ['admin', 'noscript', 'loading', 'stale'], '0', '0', '0', ['@admin', '@slow', '@dangerous'], [], [], []]]"
+KEYS n=77 sample=['order_20261026', '36.151.120.62_43306|MuHanPay.pay_attachment', 'session-id:JNrzbXWw5B0vv0f41HAPuDVhYhbb-KgMW7vL3014sYY', 'session-id:XZ2qA9CDDAlCloT8oI6tOhYPSS4aA2DNurXS-vW7l8I', 'order_20261101', 'user_order_1010_20261028', 'user_order_1010_20261025', '36.151.120.62_43306|MuHanPay.pay_user', 'configs', 'session-id:O_t8QYi6PTnXzuiGzU8_zjXzgQ1PhBfDEfR3P8jL4Jc', '36.151.120.62_43306|MuHanPay.pay_regcode', 'order_20261029', 'order_20261025', 'user_order_1010_20261030', 'order_20261028', 'user_order_1012_20261028', '36.151.120.62_43306|MuHanPay.pay_blacklist', 'session:831eda14-6c84-401a-88a8-d464142c63b7', '36.151.120.62_43306|MuHanPay.pay_invitecode', 'user_order_1013_20261101', 'session:d2c2177b-aafc-419c-847f-62205e1c82ce', '36.151.120.62_43306|MuHanPay.pay_order', '36.151.120.62_43306|MuHanPay.pay_log', 'user_order_1012_20261027', '36.151.120.62_43306|MuHanPay.pay_internal_transfer', '36.151.120.62_43306|MuHanPay.pay_psinternal', 'user_order_1010_20261031', '36.151.120.62_43306|MuHanPay.pay_refundorder', 'user_order_1013_20261028', '36.151.120.62_43306|MuHanPay.pay_complaintask', 'user_order_1010_20261027', 'user_order_1013_20261031', 'session-id:3ZDq2Mr8xvg9volWv1EAheJBFoNH9dmj4ZHx04FhLmA', 'user_order_1010_20261026', '36.151.120.62_43306|MuHanPay.pay_anounce', '36.151.120.62_43306|MuHanPay.pay_plugin', 'user_order_1013_20261030', 'order_20261027', '36.151.120.62_43306|MuHanPay.pay_domain', '36.151.120.62_43306|MuHanPay.pay_psorder']
+== write test ==
+orig dir ['dir', '/data']
+SET dir /tmp -> {'err': "ERR CONFIG SET failed (possibly related to argument 'dir') - can't set protected config"}
+CONFIG GET dir -> ['dir', '/data']
+CONFIG SET dbfilename i734probe.rdb -> {'err': "ERR CONFIG SET failed (possibly related to argument 'dbfilename') - can't set protected config"}
+SET k -> 'OK'
+BGSAVE -> 'Background saving started'
+INFO persistence last_rdb ['rdb_changes_since_last_save:0', 'rdb_bgsave_in_progress:0', 'rdb_last_save_time:1793582020', 'rdb_last_bgsave_status:ok', 'rdb_last_bgsave_time_sec:0', 'rdb_current_bgsave_time_sec:-1']
+DEL -> '1'
+restore dir '/data' -> {'err': "ERR CONFIG SET failed (possibly related to argument 'dir') - can't set protected config"}
+restore dbfilename 'dump.rdb' -> {'err': "ERR CONFIG SET failed (possibly related to argument 'dbfilename') - can't set protected config"}
+CONFIG GET dir/fn now ['dir', '/data'] ['dbfilename', 'dump.rdb']
