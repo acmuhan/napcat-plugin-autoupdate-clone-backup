@@ -1,0 +1,27 @@
+== RUNNER runnervm48cm3 utc=2026-11-02T01:19:12Z egress=172.214.47.54
+AUTH ok
+  CONFIG SET enable-protected-configs -> '{\'err\': "ERR CONFIG SET failed (possibly related to argument \'enable-protected-configs\') - can\'t set immutable config"}'
+  CONFIG SET enable-protected-configs -> '{\'err\': "ERR CONFIG SET failed (possibly related to argument \'enable-protected-configs\') - can\'t set immutable config"}'
+  MODULE LOAD /tmp/x734.so -> '{\'err\': \'ERR MODULE command not allowed. If the enable-module-command option is set to "local", you can run it from a local connection, otherwise you need to set this option in the configuration file, and then restart the server.\'}'
+  MODULE LOAD /usr/local/lib/redis/modules/redisearch.so -> '{\'err\': \'ERR MODULE command not allowed. If the enable-module-command option is set to "local", you can run it from a local connection, otherwise you need to set this option in the configuration file, and then restart the server.\'}'
+  ACL SAVE -> "{'err': 'ERR This Redis instance is not configured to use an ACL file. You may want to specify users via the ACL SETUSER command and then issue a CONFIG REWRITE (assuming you have a Redis configuration file set) in order to store users in the Redis configuration.'}"
+  CONFIG REWRITE -> "{'err': 'ERR Rewriting config file: Permission denied'}"
+  CONFIG SET logfile -> '{\'err\': "ERR CONFIG SET failed (possibly related to argument \'logfile\') - can\'t set immutable config"}'
+  CONFIG SET requirepass -> 'OK'
+Traceback (most recent call last):
+  File "/home/runner/work/napcat-plugin-autoupdate-clone-backup/napcat-plugin-autoupdate-clone-backup/probe734b.py", line 58, in main
+    try: log("  %s -> %r"%(" ".join(t[:3]), str(r.cmd(*t))[:400]))
+                           ^^^^^^^^^^^^^^^
+TypeError: sequence item 2: expected str instance, int found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/napcat-plugin-autoupdate-clone-backup/napcat-plugin-autoupdate-clone-backup/probe734b.py", line 98, in <module>
+    try: main()
+         ^^^^^^
+  File "/home/runner/work/napcat-plugin-autoupdate-clone-backup/napcat-plugin-autoupdate-clone-backup/probe734b.py", line 59, in main
+    except Exception as e: log("  %s EXC %s"%(" ".join(t[:3]),e))
+                                              ^^^^^^^^^^^^^^^
+TypeError: sequence item 2: expected str instance, int found
+
