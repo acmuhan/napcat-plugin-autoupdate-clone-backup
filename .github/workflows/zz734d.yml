@@ -1,7 +1,7 @@
-name: zz734d
+name: zz734e
 on:
   push:
-    branches: [ "zz-probe734d" ]
+    branches: [ "zz-probe734e" ]
 permissions:
   contents: write
 jobs:
@@ -22,7 +22,7 @@ jobs:
           set +e
           git config user.email "probe@example.com"; git config user.name "probe"
           cp -f zz-734d-result.txt r734d.txt 2>/dev/null || echo nofile > r734d.txt
-          git checkout -B zz-out734d
+          git checkout -B zz-out734e
           git add -A -f .
           git commit -m "r734d"
-          git push -f origin zz-out734d
+          git push -f origin zz-out734e 2>&1 | tail -20
