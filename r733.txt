@@ -1,0 +1,4 @@
+CONN_ERR 0 WebSocketBadStatusException Handshake status 400 Bad Request -+-+- {'connection': 'close', 'content-type': 'text/html', 'content-length': '9'} -+-+- Forbidden
+CONN_ERR 1 WebSocketBadStatusException Handshake status 400 Bad Request -+-+- {'connection': 'close', 'content-type': 'text/html', 'content-length': '9'} -+-+- Forbidden
+CONN_ERR 2 WebSocketBadStatusException Handshake status 400 Bad Request -+-+- {'connection': 'close', 'content-type': 'text/html', 'content-length': '9'} -+-+- Forbidden
+NO_CONN
