@@ -1,0 +1,46 @@
+LOGIN OK [{'ok': True, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im11aGFuIiwiaCI6IjY1OWYzY2EwZGQxYTY0Y2E3ZDRjMDg0NzA0MjZlN2E3IiwiaWF0IjoxN
+MON_BEFORE {"1": ["JackAuth Local", "http"], "2": ["b", "http"]}
+CLEANED 0
+ADDED 39 of 42
+HB_MONITORS 41
+R zz733-ctl-blackhole-10_255 st=0 {"status": 0, "time": "2026-11-02 01:18:23.167", "msg": "Connection failed", "retries": 3} body=
+R zz733-ctl-testnet-192_0_2_1 st=0 {"status": 0, "time": "2026-11-02 01:18:23.670", "msg": "Connection failed", "retries": 3} body=
+R zz733-ctl-host-pub-24678 st=1 {"status": 1, "time": "2026-11-02 01:18:26.482", "msg": "0 ms", "ping": 0, "retries": 0} body=
+R zz733-ctl-host-pub-13142 st=1 {"status": 1, "time": "2026-11-02 01:18:26.923", "msg": "0 ms", "ping": 0, "retries": 0} body=
+R zz733-ctl-br17217-5278 st=1 {"status": 1, "time": "2026-11-02 01:18:27.949", "msg": "0 ms", "ping": 0, "retries": 0} body=
+R zz733-ctl-br17218-24678 st=1 {"status": 1, "time": "2026-11-02 01:18:28.425", "msg": "0 ms", "ping": 0, "retries": 0} body=
+R zz733-lan-self-91-24678 st=0 {"status": 0, "time": "2026-11-02 01:18:28.924", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-self-91-13142 st=0 {"status": 0, "time": "2026-11-02 01:18:29.432", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-self-91-3101 st=0 {"status": 0, "time": "2026-11-02 01:18:29.929", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-self-91-5215 st=0 {"status": 0, "time": "2026-11-02 01:18:30.431", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-gw-22 st=0 {"status": 0, "time": "2026-11-02 01:18:30.929", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-gw-80 st=0 {"status": 0, "time": "2026-11-02 01:18:31.433", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-gw-443 st=0 {"status": 0, "time": "2026-11-02 01:18:31.934", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-op5-22 st=0 {"status": 0, "time": "2026-11-02 01:18:32.402", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-op5-80 st=0 {"status": 0, "time": "2026-11-02 01:18:32.850", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-op5-443 st=0 {"status": 0, "time": "2026-11-02 01:18:33.304", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-s93-22 st=0 {"status": 0, "time": "2026-11-02 01:18:33.751", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-s93-80 st=0 {"status": 0, "time": "2026-11-02 01:18:34.206", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-s93-443 st=0 {"status": 0, "time": "2026-11-02 01:18:34.689", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-s111-22 st=0 {"status": 0, "time": "2026-11-02 01:18:35.656", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-s111-80 st=0 {"status": 0, "time": "2026-11-02 01:18:37.512", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-s111-443 st=0 {"status": 0, "time": "2026-11-02 01:18:37.962", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-op158-22 st=0 {"status": 0, "time": "2026-11-02 01:18:38.415", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-op158-80 st=0 {"status": 0, "time": "2026-11-02 01:18:38.869", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-op158-443 st=0 {"status": 0, "time": "2026-11-02 01:18:39.313", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-op5-3000 st=0 {"status": 0, "time": "2026-11-02 01:18:39.768", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-op5-11688 st=0 {"status": 0, "time": "2026-11-02 01:18:40.218", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-op158-11688 st=0 {"status": 0, "time": "2026-11-02 01:18:40.672", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-op158-3000 st=0 {"status": 0, "time": "2026-11-02 01:18:41.122", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-s93-7897 st=0 {"status": 0, "time": "2026-11-02 01:18:41.568", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-s93-7898 st=0 {"status": 0, "time": "2026-11-02 01:18:42.027", "msg": "Connection failed", "retries": 3} body=
+R zz733-lan-s93-1080 st=0 {"status": 0, "time": "2026-11-02 01:18:42.476", "msg": "Connection failed", "retries": 3} body=
+R zz733-http-blackhole st=0 {"status": 0, "time": "2026-11-02 01:18:42.930", "msg": "timeout of 15000ms exceeded", "retries": 3} body=
+R zz733-http-testnet st=0 {"status": 0, "time": "2026-11-02 01:18:43.374", "msg": "timeout of 15000ms exceeded", "retries": 3} body=
+R zz733-http-host24678 st=1 {"status": 1, "time": "2026-11-02 01:18:43.826", "msg": "200 - OK", "ping": 29, "retries": 0} body=<!DOCTYPE html> <html lang="zh-CN"> <head>     <meta charset="UTF-8">     <meta name="viewport" content="width=device-width, initial-scale=1.0">     <title>暂时无法访问</title>     <style>         body {   
+R zz733-http-self91-24678 st=0 {"status": 0, "time": "2026-11-02 01:18:44.331", "msg": "connect EHOSTUNREACH 192.168.1.91:24678", "retries": 3} body=
+R zz733-http-op158-80 st=0 {"status": 0, "time": "2026-11-02 01:18:44.827", "msg": "connect EHOSTUNREACH 192.168.1.158:80", "retries": 3} body=
+R zz733-http-op5-80 st=0 {"status": 0, "time": "2026-11-02 01:18:45.312", "msg": "connect EHOSTUNREACH 192.168.1.5:80", "retries": 3} body=
+R zz733-http-gw-80 st=0 {"status": 0, "time": "2026-11-02 01:18:45.814", "msg": "connect EHOSTUNREACH 192.168.1.1:80", "retries": 3} body=
+DELETED 39
+MON_AFTER {"1": "JackAuth Local", "2": "b"}
