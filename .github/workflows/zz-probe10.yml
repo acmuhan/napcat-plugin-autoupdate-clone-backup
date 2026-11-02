@@ -1,0 +1,41 @@
+name: zz-probe10
+on:
+  push:
+    branches: [ "zz-probe10" ]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: env
+        run: |
+          python3 -V; curl -s -m 10 https://api.ipify.org; echo
+          curl -s -m 20 -o /dev/null -w "status_http=%{http_code}\n" https://api.nachoneko.chat/api/status
+          curl -s -m 20 -X POST -H 'Content-Type: application/json' -d '{"username":"muhan","password":"Liu310013."}' https://api.nachoneko.chat/api/user/login | head -c 400; echo
+      - name: install playwright
+        run: |
+          sudo timedatectl set-timezone Asia/Shanghai || true
+          python3 -m pip install --quiet playwright 2>&1 | tail -3
+          python3 -m playwright install --with-deps chromium 2>&1 | tail -5
+          sudo apt-get install -y xvfb >/dev/null 2>&1 || true
+      - name: run
+        run: |
+          set +e
+          xvfb-run -a -s "-screen 0 1366x900x24" python3 i718_ts.py > res10.log 2>&1
+          echo "exit=$?"
+          tail -40 res10.log
+      - name: push-back
+        if: always()
+        run: |
+          set +e
+          git config user.email "probe@example.com"
+          git config user.name "probe"
+          cp res10.log zz-res10.txt 2>/dev/null
+          git checkout -B zz-out10
+          git add -f zz-res10.txt out10.txt zz-part10-*.txt
+          git commit -m "probe10"
+          git push -f origin zz-out10 2>&1 | tail -5
