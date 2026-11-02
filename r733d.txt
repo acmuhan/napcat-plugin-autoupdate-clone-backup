@@ -1,0 +1,33 @@
+LOGIN OK
+MON_BEFORE {"1": "JackAuth Local", "2": "b"}
+ADDED 28 of 28
+R zz733-b19-32311 st=0 msg=Connection failed
+R zz733-b19-80 st=0 msg=Connection failed
+R zz733-b20-32311 st=0 msg=Connection failed
+R zz733-b20-80 st=1 msg=0 ms
+R zz733-b21-32311 st=0 msg=Connection failed
+R zz733-b21-80 st=1 msg=0 ms
+R zz733-b22-32311 st=0 msg=Connection failed
+R zz733-b22-80 st=0 msg=Connection failed
+R zz733-b23-32311 st=0 msg=Connection failed
+R zz733-b23-80 st=0 msg=Connection failed
+R zz733-b24-32311 st=0 msg=Connection failed
+R zz733-b24-80 st=0 msg=Connection failed
+R zz733-b25-32311 st=0 msg=Connection failed
+R zz733-b25-80 st=0 msg=Connection failed
+R zz733-b26-32311 st=0 msg=Connection failed
+R zz733-b26-80 st=0 msg=Connection failed
+R zz733-b27-32311 st=0 msg=Connection failed
+R zz733-b27-80 st=0 msg=Connection failed
+R zz733-b28-32311 st=0 msg=Connection failed
+R zz733-b28-80 st=0 msg=Connection failed
+R zz733-b29-32311 st=0 msg=Connection failed
+R zz733-b29-80 st=0 msg=Connection failed
+R zz733-b30-32311 st=0 msg=Connection failed
+R zz733-b30-80 st=0 msg=Connection failed
+R zz733-p-10_0_0_1 st=0 msg=Connection failed
+R zz733-p-192_168_0_1 st=0 msg=Connection failed
+R zz733-p-172_16_0_1 st=0 msg=Connection failed
+R zz733-p-192_168_2_1 st=0 msg=Connection failed
+DELETED 0
+MON_AFTER {"1": "JackAuth Local", "2": "b"}
