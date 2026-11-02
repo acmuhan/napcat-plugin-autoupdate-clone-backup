@@ -1,0 +1,209 @@
+LOGIN_OK [{'ok': True, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im11aGFuIiwiaCI6IjY1OWYzY2EwZGQxYTY0Y2E3ZDR
+EXISTING_MONITORS {"1": ["JackAuth Local", "http", "http://103.40.14.130:5278/actuator/health", true], "2": ["b", "http", "http://socket.web.jackal.auth.dolove.ccb.openrealm.cn/actuator/health", true], "57": ["ctl-3101", "tcp", "127.0.0.1", true], "58": ["ctl-5278", "tcp", "127.0.0.1", true], "59": ["ctl-32311", "tcp", "127.0.0.1", true], "60": ["d17-32311", "tcp", "172.17.0.1", true], "61": ["d18-32311", "tcp", "172.18.0.1", true], "62": ["pub-32311", "tcp", "103.40.14.130", true], "63": ["zz714h32311", "http", "http://127.0.0.1:32311/", true], "64": ["zz714h5278", "http", "http://127.0.0.1:5278/actuator/health", true], "65": ["ctl-3101", "tcp", "127.0.0.1", true]}
+CLEAN 57 ctl-3101 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+CLEAN 58 ctl-5278 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+CLEAN 59 ctl-32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+CLEAN 60 d17-32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+CLEAN 61 d18-32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+CLEAN 62 pub-32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+CLEAN 63 zz714h32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+CLEAN 64 zz714h5278 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+CLEAN 65 ctl-3101 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': True}]
+ADD zzp-lo32311 73
+ADD zzp-lo5278 74
+ADD zzp-17217 75
+ADD zzp-17218 78
+ADD zzp-pub32311 80
+ADD zzp-192168-1 82
+ADD zzp-192168-5 85
+ADD zzp-192168-5b 88
+ADD zzp-192168-158 90
+ADD zzp-192168-91 92
+ADD zzp-192168-93 95
+ADD zzp-192168-111 97
+ADD zzp-http32311 99
+ADD zzp-http5278 101
+BATCH [["zzp-lo32311", 73], ["zzp-lo5278", 74], ["zzp-17217", 75], ["zzp-17218", 78], ["zzp-pub32311", 80], ["zzp-192168-1", 82], ["zzp-192168-5", 85], ["zzp-192168-5b", 88], ["zzp-192168-158", 90], ["zzp-192168-91", 92], ["zzp-192168-93", 95], ["zzp-192168-111", 97], ["zzp-http32311", 99], ["zzp-http5278", 101]]
+PUSHES_TOTAL 1370 HB_MONITORS [1, 2, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129]
+HB mid=65 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=66 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=67 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=68 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=69 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=70 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=71 status=0 ping=None msg='connect ECONNREFUSED 127.0.0.1:32311' resp=
+HB mid=72 status=0 ping=None msg='connect ECONNREFUSED 127.0.0.1:5278' resp=
+HB mid=73 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=74 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=75 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=76 status=1 ping=0 msg='0 ms' resp=
+HB mid=77 status=0 ping=None msg='Connection failed' resp=
+HB mid=78 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=79 status=0 ping=None msg='Connection failed' resp=
+HB mid=80 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=81 status=0 ping=None msg='Connection failed' resp=
+HB mid=82 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=83 status=0 ping=None msg='Connection failed' resp=
+HB mid=85 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=84 status=0 ping=None msg='Connection failed' resp=
+HB mid=86 status=1 ping=0 msg='0 ms' resp=
+HB mid=87 status=1 ping=0 msg='0 ms' resp=
+HB mid=88 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=89 status=1 ping=0 msg='0 ms' resp=
+HB mid=90 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=91 status=1 ping=0 msg='0 ms' resp=
+HB mid=92 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=93 status=0 ping=None msg='Connection failed' resp=
+HB mid=94 status=1 ping=0 msg='0 ms' resp=
+HB mid=95 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=96 status=1 ping=0 msg='0 ms' resp=
+HB mid=97 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=98 status=1 ping=0 msg='0 ms' resp=
+HB mid=99 status=0 ping=None msg='connect ECONNREFUSED 127.0.0.1:32311' resp=
+HB mid=100 status=1 ping=1 msg='1 ms' resp=
+HB mid=101 status=0 ping=None msg='connect ECONNREFUSED 127.0.0.1:5278' resp=
+HB mid=102 status=1 ping=0 msg='0 ms' resp=
+HB mid=103 status=0 ping=None msg='Connection failed' resp=
+HB mid=104 status=0 ping=None msg='Connection failed' resp=
+HB mid=105 status=0 ping=None msg='Connection failed' resp=
+HB mid=107 status=0 ping=None msg='Connection failed' resp=
+HB mid=106 status=0 ping=None msg='Connection failed' resp=
+HB mid=110 status=0 ping=None msg='Connection failed' resp=
+HB mid=108 status=0 ping=None msg='Connection failed' resp=
+HB mid=109 status=0 ping=None msg='Connection failed' resp=
+HB mid=1 status=1 ping=717 msg='200 - ' resp=
+HB mid=114 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=115 status=1 ping=4 msg='200 - OK' resp=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" id="theme-color" content="" />
+    <meta name="description" content="Uptime Kuma monitoring tool" />
+    <title>Uptime Kuma</title>
+    <style>        .noscript-message {
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+  <script type="module" crossorigin src="/assets/index-CL-Ur1FB.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DYbShC8n.css">
+</head>
+<body>
+<noscript
+HB mid=2 status=1 ping=639 msg='200 - ' resp=
+HB mid=116 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=117 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=111 status=0 ping=None msg='Connection failed' resp=
+HB mid=118 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=119 status=0 ping=None msg='connect ECONNREFUSED 103.40.14.130:32311' resp=
+HB mid=120 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=112 status=0 ping=None msg='Connection failed' resp=
+HB mid=121 status=0 ping=None msg='connect ECONNREFUSED 103.40.14.130:32311' resp=
+HB mid=122 status=0 ping=None msg='Unknown Monitor Type' resp=
+HB mid=113 status=0 ping=None msg='Connection failed' resp=
+HB mid=123 status=0 ping=None msg='connect ECONNREFUSED 127.0.0.1:32311' resp=
+HB mid=125 status=0 ping=None msg='connect ECONNREFUSED 127.0.0.1:5278' resp=
+HB mid=124 status=1 ping=568 msg='200 - ' resp={"status":"UP"}
+HB mid=126 status=1 ping=3 msg='403 - ' resp=
+HB mid=127 status=1 ping=29 msg='200 - OK' resp=<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暂时无法访问</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .icon img {
+            width: 100px;
+            height: auto;
+        }
+        h1 {
+            font-size: 24px;
+            color: #555;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+      
+HB mid=128 status=1 ping=2 msg='200 - OK' resp=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Temporarily Unavailable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .icon img {
+            width: 100px;
+            height: auto;
+        }
+        h1 {
+            font-size: 24px;
+            color: #555;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 
+HB mid=129 status=0 ping=None msg='Request failed with status code 502' resp=<html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+DEL zzp-lo32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-lo5278 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-17217 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-17218 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-pub32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-192168-1 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-192168-5 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-192168-5b [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-192168-158 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-192168-91 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-192168-93 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-192168-111 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-http32311 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+DEL zzp-http5278 [{'ok': True, 'msg': 'successDeleted', 'msgi18n': 
+LEFT {"1": "JackAuth Local", "2": "b", "66": "ctl-5278", "67": "ctl-32311", "68": "d17-32311", "69": "d18-32311", "70": "pub-32311", "71": "zz714h-32311", "72": "zz714h-5278", "76": "zz714p-127_0_0_1-3001", "77": "zz714p-127_0_0_1-3101", "79": "zz714p-127_0_0_1-32311", "81": "zz714p-127_0_0_1-5278", "83": "zz714p-172_17_0_1-32311", "84": "zz714p-172_18_0_1-32311", "86": "zz714p-172_17_0_1-5278", "87": "zz714p-172_17_0_1-24678", "89": "zz714p-172_18_0_1-24678", "91": "zz714p-172_17_0_1-13142", "93": "zz714p-103_40_14_130-32311", "94": "zz714p-103_40_14_130-24678", "96": "zz714p-103_40_14_130-13142",
