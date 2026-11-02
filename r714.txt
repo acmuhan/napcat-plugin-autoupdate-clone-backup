@@ -1,0 +1,33 @@
+OPEN 0{"sid":"DSxZY33qUQpJJMv8AAI2","upgrades":[],"pingInterval":25000,"pingTimeout":20000,"maxPayload":1000000}
+NS 40{"sid":"v7bhnC1fzCxJMqp-AAIz"}
+LOGIN [{"ok":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im11aGFuIiwiaCI6IjY1OWYzY2EwZGQxYTY0Y2E3ZDRjMDg0NzA0MjZlN2E3IiwiaWF0IjoxNzkzNTgxMDIzfQ.PDCqI6EuilkCdrWnFTvh24xMvAiIe4iVziNnLBJ
+EV info None
+EV getSettings [{"ok":true,"data":{"serverTimezone":"Asia/Shanghai","checkUpdate":true,"searchEngineIndex":true,"entryPage":"dashboard","nscd":true,"keepDataPeriodDays":180,"tlsExpiryNotifyDays":[7,14,21],"domainExpiryNotifyDays":[7,14,21],"trustProxy":false,"primaryBaseURL":"https://status.openrealm.cn","globalpingApiToken":"pirrafjeifnicgtuqy66k6p4nfsxedb7"}}]
+EV getMonitorList [{"ok":true}]
+EV getProxyList None
+EV getNotificationList None
+ADD ctl-3101 [{"ok":true,"msg":"successAdded","msgi18n":true,"monitorID":114}]
+ADD ctl-5278 [{"ok":true,"msg":"successAdded","msgi18n":true,"monitorID":116}]
+ADD ctl-32311 [{"ok":true,"msg":"successAdded","msgi18n":true,"monitorID":117}]
+ADD d17-32311 0[{"ok":true,"msg":"successAdded","msgi18n":true,"monitorID":118}]
+ADD d18-32311 1[{"ok":true,"msg":"successAdded","msgi18n":true,"monitorID":120}]
+ADD pub-32311 2[{"ok":true,"msg":"successAdded","msgi18n":true,"monitorID":122}]
+ADD zz714h32311 3[{"ok":true,"msg":"successAdded","msgi18n":true,"monitorID":123}]
+ADD zz714h5278 4[{"ok":true,"msg":"successAdded","msgi18n":true,"monitorID":125}]
+IDS {"tcp:ctl-3101": 114, "tcp:ctl-5278": 116, "tcp:ctl-32311": 117, "tcp:d17-32311": null, "tcp:d18-32311": null, "tcp:pub-32311": null, "http:32311": null, "http:5278": null}
+BEATS tcp:ctl-3101 NONE
+Traceback (most recent call last):
+  File "/home/runner/work/napcat-plugin-autoupdate-clone-backup/napcat-plugin-autoupdate-clone-backup/probe.py", line 62, in <module>
+    rr=emit("getMonitorBeats",[mid,1],12)
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/napcat-plugin-autoupdate-clone-backup/napcat-plugin-autoupdate-clone-backup/probe.py", line 22, in emit
+    ws.send(msg)
+  File "/home/runner/.local/lib/python3.12/site-packages/websocket/_core.py", line 338, in send
+    return self.send_frame(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/websocket/_core.py", line 378, in send_frame
+    bytes_sent = self._send(data)
+                 ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/websocket/_core.py", line 636, in _send
+    raise WebSocketConnectionClosedException("socket is already closed.")
+websocket._exceptions.WebSocketConnectionClosedException: socket is already closed.
