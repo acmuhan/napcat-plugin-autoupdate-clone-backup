@@ -1,0 +1,67 @@
+== RUNNER runnervm48cm3 utc=2026-11-02T01:22:00Z egress=20.12.245.225
+AUTH re-check -> 'PONG'
+  [eval dir] -> "{'err': 'ERR This Redis command is not allowed from script script: ac45daf858ffe8f516c8c3df66e8ca67ede5fed2, on @user_script:1.'}"
+  [eval dbfn] -> "{'err': 'ERR This Redis command is not allowed from script script: f36c2164a77cc6319296dfec1114271be7f84ed9, on @user_script:1.'}"
+  [eval pcall module] -> 'false|ERR This Redis command is not allowed from script'
+  [eval os getenv] -> 'false'
+  [debug jmap] -> '{\'err\': \'ERR DEBUG command not allowed. If the enable-debug-command option is set to "local", you can run it from a local connection, otherwise you need to set this option in the configuration file, and then restart the server.\'}'
+  [debug segfault-deny] -> '{\'err\': \'ERR DEBUG command not allowed. If the enable-debug-command option is set to "local", you can run it from a local connection, otherwise you need to set this option in the configuration file, and then restart the server.\'}'
+  [function list] -> '[]'
+  [module loadex] -> '{\'err\': \'ERR MODULE command not allowed. If the enable-module-command option is set to "local", you can run it from a local connection, otherwise you need to set this option in the configuration file, and then restart the server.\'}'
+  [acl setuser] -> 'OK'
+== MIGRATE connect oracle (source = redis container 172.18.0.5) ==
+  127.0.0.1:32311 -> "{'err': 'IOERR error or timeout writing to target instance'}" (0.25s)
+  172.18.0.1:32311 -> "{'err': 'IOERR error or timeout writing to target instance'}" (0.24s)
+  172.18.0.1:24678 -> 'OK' (0.72s)
+  172.18.0.1:5278 -> 'NOKEY' (0.24s)
+  172.18.0.1:22 -> 'NOKEY' (0.24s)
+  172.18.0.1:3101 -> 'NOKEY' (0.24s)
+  172.18.0.1:5215 -> 'NOKEY' (0.69s)
+  172.18.0.1:13021 -> 'NOKEY' (0.24s)
+  172.18.0.1:23334 -> 'NOKEY' (0.24s)
+  103.40.14.130:32311 -> 'NOKEY' (0.24s)
+  103.40.14.130:24678 -> 'NOKEY' (0.24s)
+  172.18.0.7:80 -> 'NOKEY' (0.24s)
+  172.18.0.2:6379 -> 'NOKEY' (0.24s)
+== key dump (sessions/configs) ==
+KEYS 74
+  K order_20261026 type=string ttl=89962 val='a:4:{s:3:"all";d:1163;s:10:"profit_all";d:-618.75;s:7:"paytype";a:3:{i:1;d:431;i:2;d:732;i:3;i:0;}s:14:"profit_paytype";a:3:{i:1;d:25.41;i:2;d:-644.16;i:3;i:0;}}'
+  K session-id:JNrzbXWw5B0vv0f41HAPuDVhYhbb-KgMW7vL3014sYY type=string ttl=18721 val='1c38fd57-2731-4447-92cd-802cbd0c5edf'
+  K session-id:XZ2qA9CDDAlCloT8oI6tOhYPSS4aA2DNurXS-vW7l8I type=string ttl=3794 val='6087e9f5-dbda-4fed-8e05-11714a36923a'
+  K order_20261101 type=string ttl=573890 val='a:4:{s:3:"all";d:1228.24;s:10:"profit_all";d:-611.58;s:7:"paytype";a:3:{i:1;d:521.83;i:2;d:706.41;i:3;i:0;}s:14:"profit_paytype";a:3:{i:1;d:10.16;i:2;d:-621.74;i:3;i:0;}}'
+  K user_order_1010_20261028 type=string ttl=241167 val='a:2:{i:2;d:811;i:1;d:425;}'
+  K user_order_1010_20261025 type=string ttl=51735 val='a:2:{i:1;d:476;i:2;d:510;}'
+  K configs type=string ttl=-1 val='a:200:{s:12:"admin_paypwd";s:6:"258025";s:9:"admin_pwd";s:20:"pR6kHZChMC9xpoxGYRrP";s:10:"admin_user";s:5:"admin";s:15:"alicombine_open";s:1:"0";s:15:"alipaymini_path";s:0:"";s:14:"alipay_aes_key";s:0:"";s:16:"alipay_getmobile";s:1:"0";s:17:"alipay_mini_login";s:1:"0";s:14:"alipay_paymode";s:1:"0";s:17:"alipay_qrcode_url";s:0:"";s:17:"alipay_qrpaylogin";s:1:"0";s:18:"alipay_wappaylogin";s:1:"0";s:16:"alipay_web_login";s:1:"0";s:20:"alipay_web_login_all";s:1:"0";s:6:"apiurl";s:32:"https://credit.hub.openrealm.cn/";s:22:"applyments_group_limit";s:1:"0";s:15:"applyments_open";s:1:"1";s:14:"appstore_token";s:67:"6907vgTOu1KMs5PNSy5w39zXOKBdPhtcfLxns8QQUyjcsv75mgDUYmh6Q3ojs9pcpVM";s:6:"appurl";s:0:"";s:17:"auto_settle_money";s:0:"";s:8:"blackmsg";s:0:"";s:12:"black_payact";s:1:"0";s:10:"blockalert";s:72:"温馨提醒该商品禁止出售，如有疑问请联系网站客服！";s:9:"blockname";s:0:"";s:5:"build";s:10:"2026-02-13";s:10:"capt'
+  K session-id:O_t8QYi6PTnXzuiGzU8_zjXzgQ1PhBfDEfR3P8jL4Jc type=string ttl=13635 val='d2c2177b-aafc-419c-847f-62205e1c82ce'
+  K order_20261029 type=string ttl=317031 val='a:4:{s:3:"all";d:1703;s:10:"profit_all";d:-561.61;s:7:"paytype";a:3:{i:1;d:998;i:2;d:705;i:3;i:0;}s:14:"profit_paytype";a:3:{i:1;d:58.86;i:2;d:-620.47;i:3;i:0;}}'
+  K order_20261025 type=string ttl=10839 val='a:4:{s:3:"all";d:996;s:10:"profit_all";d:-430.23;s:7:"paytype";a:3:{i:1;d:476;i:2;d:520;i:3;i:0;}s:14:"profit_paytype";a:3:{i:1;d:28.07;i:2;d:-458.3;i:3;i:0;}}'
+  K user_order_1010_20261030 type=string ttl=398753 val='a:2:{i:1;d:788;i:2;d:735;}'
+  K order_20261028 type=string ttl=265523 val='a:4:{s:3:"all";d:1236;s:10:"profit_all";d:-688.59;s:7:"paytype";a:3:{i:1;d:425;i:2;d:811;i:3;i:0;}s:14:"profit_paytype";a:3:{i:1;d:25.09;i:2;d:-713.68;i:3;i:0;}}'
+  K user_order_1012_20261028 type=string ttl=567255 val='a:0:{}'
+  K user_order_1013_20261101 type=string ttl=582601 val='a:0:{}'
+  K session:d2c2177b-aafc-419c-847f-62205e1c82ce type=string ttl=13630 val='{"userId":3,"groupId":2,"title":"Wormwaker","username":"noexcept","ip":"222.90.96.241","hwid":"MJKFZ5VDGYJ37XH2ZKVVCGQYDD2AKKMDUEYVWLHKS2FNS8CXDQD52HN4THDVAB55FMHFMTXCZWKTSAATN6KHZLCRWPKMP55D7YT75K8N339A","ircKey":"or5N7OEKx1DxdBZsOsTyVXu8t8iejNX8pblFHIUCTnM=","expiresAt":1793596116959,"credentialVersion":"dcaa3800319c7fc28f99a876d8d91ffd12d5cad60197818868f2c3760fcd8a69"}'
+  K user_order_1012_20261027 type=string ttl=567253 val='a:0:{}'
+  K user_order_1010_20261031 type=string ttl=549475 val='a:2:{i:2;d:723;i:1;d:998;}'
+  K user_order_1013_20261028 type=string ttl=567688 val='a:0:{}'
+  K user_order_1010_20261027 type=string ttl=193049 val='a:2:{i:2;d:516;i:1;d:864;}'
+  K user_order_1013_20261031 type=string ttl=567686 val='a:0:{}'
+  K user_order_1010_20261026 type=string ttl=56127 val='a:2:{i:1;d:431;i:2;d:732;}'
+  K user_order_1013_20261030 type=string ttl=567684 val='a:0:{}'
+  K order_20261027 type=string ttl=178408 val='a:4:{s:3:"all";d:1488.9;s:10:"profit_all";d:-411.68;s:7:"paytype";a:3:{i:1;d:964;i:2;d:524.9;i:3;i:0;}s:14:"profit_paytype";a:3:{i:1;d:50.86;i:2;d:-462.54;i:3;i:0;}}'
+  K user_order_1012_20261029 type=string ttl=567246 val='a:0:{}'
+  K order_20261031 type=string ttl=509741 val='a:4:{s:3:"all";d:1741;s:10:"profit_all";d:-596.35;s:7:"paytype";a:3:{i:1;d:998;i:2;d:743;i:3;i:0;}s:14:"profit_paytype";a:3:{i:1;d:58.89;i:2;d:-655.24;i:3;i:0;}}'
+  K user_order_1012_20261031 type=string ttl=567244 val='a:0:{}'
+  K user-sessions:280 type=set ttl=18701 val="['1c38fd57-2731-4447-92cd-802cbd0c5edf']"
+  K session:1c38fd57-2731-4447-92cd-802cbd0c5edf type=string ttl=18700 val='{"userId":280,"groupId":1,"title":"dubi906w","username":"dubi906w","ip":"14.107.172.119","hwid":"MJKFZ5VDGYJ8TJH22BSVQEPNPYDZFW5BV3ND8LE2SJFM67BBPV562462TZCDAAD5FYYCDS7D3AKB473BJEMSTZTT4XW3P45M75L77MQN36G57SZD7EEJYLS","ircKey":"/ZIrysWIRWEiqJ+HZA5qzlkMq10k47y3rkbYmC2ekHo=","expiresAt":1793601197184,"credentialVersion":"4c7558cca847ae345a5ab35853abd3747631ee0d4c2b711e2997229b8542feec"}'
+  K user_order_1013_20261027 type=string ttl=567679 val='a:0:{}'
+  K user_order_1012_20261026 type=string ttl=567241 val='a:0:{}'
+  K user-sessions:215 type=set ttl=3771 val="['6087e9f5-dbda-4fed-8e05-11714a36923a']"
+  K user_order_1013_20261026 type=string ttl=567676 val='a:0:{}'
+  K session:6087e9f5-dbda-4fed-8e05-11714a36923a type=string ttl=3770 val='{"userId":215,"groupId":3,"title":"ShiYiYuan","username":"ShiYiYuan","ip":"125.85.93.216","hwid":"MJKFZ5VDGYJ3ZKZ9Y6JWE5QYDH4HRKDDV3ND8LRPT396S7BFP546Q5W4TU3VQ7V5FMHFMTY33F9T2EATN6KHZLCRWPKMR5VJ7ZLL3MP6Z77S","ircKey":"LdND7SsB9XTOF8ZaQimpHxRT60ZzY+hy1zivPJp4SbI=","expiresAt":1793586271045,"credentialVersion":"9a30a9a1af3b9f92cbd70e68e1d223c997b716a61c0d468703a9930e15d7fd78"}'
+  K order_20261030 type=string ttl=398734 val='a:4:{s:3:"all";d:1523;s:10:"profit_all";d:-600.34;s:7:"paytype";a:3:{i:1;d:788;i:2;d:735;i:3;i:0;}s:14:"profit_paytype";a:3:{i:1;d:46.46;i:2;d:-646.8;i:3;i:0;}}'
+  K user_order_1010_20261029 type=string ttl=397627 val='a:2:{i:2;d:704;i:1;d:998;}'
+  K user_order_1013_20261029 type=string ttl=567673 val='a:0:{}'
+  K user_order_1012_20261030 type=string ttl=567236 val='a:0:{}'
+  K order_20261102 type=string ttl=2401 val='a:4:{s:3:"all";d:278;s:10:"profit_all";d:-244.92;s:7:"paytype";a:3:{i:1;d:91.8;i:2;d:186.2;i:3;i:0;}s:14:"profit_paytype";a:3:{i:1;d:-80.84;i:2;d:-164.08;i:3;i:0;}}'
+  K 36.151.120.62_43306|MuHanPay.pay_config type=string ttl=-1 val='a:4:{s:1:"k";s:6:"string";s:1:"v";s:6:"string";s:5:"cache";s:3:"int";s:3:"_pk";s:1:"k";}'
+  K user-sessions:3 type=set ttl=13611 val="['d2c2177b-aafc-419c-847f-62205e1c82ce']"
