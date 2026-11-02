@@ -1,0 +1,44 @@
+== RUNNER5 host=runnervm48cm3 utc=2026-11-02T00:29:35Z ==
+EGRESS HTTP 200 {"Content-Length": "13", "access-control-allow-origin": "*", "content-type": "text/plain", "date": "Mon, 02 Nov 2026 00:29:36 GMT", "via": "1.1 google", "Alt-Svc": "h3=\":443\"; ma=2592000", "Connection": "close"} | '134.138.58.81'
+== FRPS 7500 basic auth ==
+FRPS7500 admin/Liu310013. :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:28:43 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+FRPS7500 admin/5KRM0rN3bmr8i :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:28:43 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+FRPS7500 frp/Liu310013. :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:28:44 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+FRPS7500 admin/258025 :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:28:45 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+FRPS7500 admin/ShenHu1337.. :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:28:46 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+FRPS7500 admin/GTAitxStRiQ3NCcc :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:28:46 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+FRPS7500 admin/pR6kHZChMC9xpoxGYRrP :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:28:47 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+FRPS7500 admin/MWkFQnadXsZBpBPm :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:28:48 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+FRPS7500 admin/redis_ZSfmZp :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:28:49 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+FRPS7500 admin/mysql_XKH25C :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:28:49 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+FRPS7500 muhan/Liu310013. :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:28:50 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+FRPS7500 admin/WorldBoxAdmin.. :: HTTP 401 {"Content-Type": "text/plain; charset=utf-8", "Www-Authenticate": "Basic realm=\"Restricted\"", "X-Content-Type-Options": "nosniff", "Date": "Mon, 02 Nov 2026 00:28:51 GMT", "Content-Length": "13", "Connection": "close"} | 'Unauthorized\n'
+== 7001 raw ==
+7001: b''
+== 24678 v1 setting (clean ip) ==
+HTTP 200 {"Content-Type": "application/json; charset=utf-8", "Set-Cookie": "panel_public_key=LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF0ZzZ5T3VDaktMbEU2S1BVVGRBZgpDWFlpMnM1YjJvSmhSVkZjYldjOU9zWm5YdG9mOXNMZnVkVGNwVEZ2cHVQcnlSVTlsbUZBOVdjRWJETklPZ0JmCkMzZUVHYWZrK0tab3o4enFad09SYldORVVtZ2N4cGZ4eG5rVDV6Wk0zaHNIYlpZcWszbkVnb2FDQkJMeDhMVHMKbWZDZTZRdFJHTkFQbHJlZSs2UWNEUjEwbUVxYkhoNEs5ZUY3bm5uWUwyQ3pmYlJ5R09sWU02ei80VEsxKy81dgpwZDJnblFzQjkrOFo4cWphdThkL3drRGpOVmJPSW01SFF2WVIyR3RnN1hSbDhjUVJyRmp3cXBncFhEeG9XYTRxClhodlY1d0ZGNGx1RzVkWUZxWXlDa3dpRkUyV2xONFdZcTdQMTA2UUYySWVqUzJGVi9GNTE2cCtZSUtOd1ZGK1gKZXdJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg%3D%3D; Path=/; Max-Age=604800", "Date": "Mon, 02 Nov 2026 00:29:45 GMT", "Content-Length": "70", "Connection": "close"} | '{"code":200,"message":"","data":{"needCaptcha":false,"language":"zh"}}'
+== 20006/21005/21500/21700/30005/40001 quick ==
+TCP 20006 OPEN 263ms
+TCP 20009 OPEN 262ms
+TCP 21005 OPEN 270ms
+TCP 21100 OPEN 266ms
+TCP 21500 OPEN 281ms
+TCP 21700 OPEN 267ms
+TCP 30005 OPEN 276ms
+TCP 40001 OPEN 285ms
+TCP 40005 OPEN 274ms
+TCP 40010 OPEN 268ms
+TCP 40031 OPEN 269ms
+TCP 46099 OPEN 278ms
+TCP 47362 OPEN 1303ms
+TCP 51005 OPEN 282ms
+TCP 60443 OPEN 324ms
+TCP 65443 OPEN 270ms
+TCP 65533 OPEN 303ms
+TCP 7501 OPEN 271ms
+TCP 8089 OPEN 271ms
+TCP 32311 ConnectionRefusedError
+TCP 12341 OPEN 266ms
+TCP 5380 OPEN 428ms
+== 185 11688 needCaptcha again ==
+HTTP 200 {"Content-Type": "application/json; charset=utf-8", "Set-Cookie": "panel_public_key=LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF5VG9wek1NVWNGeDdWZjNFVlg0cQphNkt4VXpDVWdoTGNJcnhYVXB0NFJhY25lSUVyWlhFaXl6NmttQTJIeDBPYmdDYitYc2FCTzRXVUJ6dEY3NENtCkplSFNkWE9UNzVNUlhCZE5ESWkzQmtYWng2SnhlaE9KSFdISk10QnNpOTEvcVk4cHZqaU9QOERxc29KWUduSW4KSlhzMGoydjZHVmZmTmtTL3EzcFpqZDF2Ymp4MFVYSHlKVC9SNzVPRzh1NkNGZTlDQ0xLV1JsejhPZ29hOUhnTAp3TC9ZamVpUVlmTUpMemQvTnhPLzUzdFhhd1lELzYvMnNXemNBYlExV1JCenN3aVF3N1grNTE5VXhEUzh2UmpVCmxQb29MZEljN3RyMzh2UktNTWhYNzZQS1FLeUxUMk43M3Aya0tEbjVXdmY2cy9NK1JWbmZIbXNGbEJTMk9BK3gKS1FJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg%3D%3D; Path=/; Max-Age=604800", "Date": "Mon, 02 Nov 2026 00:29:53 GMT", "Content-Length": "262", "Connection": "close"} | '{"code":200,"message":"","data":{"isDemo":false,"isIntl":false,"isOffline":false,"isFxplay":false,"isEnterprise":false,"language":"zh","menuTabs":"Disable","menuAccordion":"Disable","panelName":"1Panel","theme":"auto","needCaptcha":false,"passkeySetting":false}}'
